@@ -1,0 +1,54 @@
+%\documentclass{article}
+\documentclass[12pt]{article}
+\author{Curtis Boirum}
+\title{Low Cost Live Calibration and 3D Reconstruction}
+\date{\today}
+
+\usepackage{amsmath, enumerate, url, ulem, algorithmic, polynom, subfig}
+\usepackage{fullpage}
+\begin{document}
+\maketitle
+
+The Playstation Eye (PS Eye) USB camera has become a very popular low cost tool for computer vision. Its resolution is 600x800 and it is capable of framerates up to 125 fps (although potentially at a loss of resolution). I propose using two PS Eye cameras in conjunction with four PS Move motion controllers to create a hybrid real-time 3D reconstructure/motion capture system for use in a robotics context. 
+
+The goal will be to generate a 3D point cloud and/or direct 3D geometry from a dual image stream from two cameras at known or unkown relation to each other. This includes performing real-time visualization of (possibly reduced) 3D point cloud data into the popular 3D modeling program Blender by using its integrated Python scriptiong to route data from the cameras. This data can then easily be manipulated and visualized using Blender's array of 3D edition tools - as well as possibly using Blender's Integrated Bullet Physics Engine to perform simple physics simulation.
+
+Secondary goals:
+
+Perform automatic calibration of camera coordinates by using the Move controller(s) as reference points in 3D space.
+
+Experiment with capabilities of slow vs. fast framerate capture and point cloud generation/environmental feature recognition.
+
+Experiment with camera movement (individual, and paired), possibly on a large mobile robot frame with laptop onboard.
+
+Hardware Resources:
+
+120 lb combat robot (dissarmed)
+
+Scoretec ER-2 Robot Arm
+
+Laptop
+
+2 x PS eye cameras
+4 x PS move controllers
+
+Software Resources:
+
+Matlab
+Python/Numpy/PyCV, 
+BLender
+CLEye Cam Drivers
+
+Prior Work Resources:
+
+$http://kotaku.com/5627191/turn-your-playstation-camera-into-a-3d-scanner$
+
+$http://wiki.ipisoft.com/User_Guide_for_Multiple_PlayStation_Eye_Cameras_Configuration$
+
+$http://www.blendernation.com/2012/09/25/getting-point-clouds-into-blender/$
+
+
+
+
+
+\end{document}
